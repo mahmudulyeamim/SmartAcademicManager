@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="TextItemCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="800.0" styleClass="TextItemCard" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TrackCardController">
+    <children>
+        <Text fx:id="chapterName" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="Collections Frameworks" />
+        <AnchorPane fx:id="CompleteButton" layoutX="639.0" layoutY="35.0" prefHeight="36.0" prefWidth="135.0" styleClass="CompletedButton" stylesheets="@../css/CourseScreen.css">
+            <children>
+                <Text fx:id="buttonStatusText" layoutX="49.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CompletedButtonText" text="Completed" />
+                <ImageView fitHeight="19.0" fitWidth="16.0" layoutX="23.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/CheckedIcon.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <ImageView fx:id="verticalThreeDots" fitHeight="20.0" fitWidth="20.0" layoutX="776.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/dots-vertical-rounded-regular-24%20(2).png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+      <Text fx:id="topicName" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="EventsName" text="List Interface" />
+    </children>
+   <stylesheets>
+      <URL value="@../css/CourseScreen.css" />
+      <URL value="@../css/EventsScreen.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AttendanceScreenController">
+    <left>
+        <AnchorPane prefHeight="652.0" prefWidth="166.0" styleClass="DashboardSideBar" stylesheets="@../css/Dashboard.css" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="185.0" fitWidth="196.0" layoutX="10.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/20230408_200042.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane fx:id="summary" layoutY="151.0" prefHeight="60.0" prefWidth="200.0" styleClass="DashboardSideBarItem" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text layoutX="77.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary">
+                            <styleClass>
+                                <String fx:value="DashboardSideBarItemText" />
+                                <String fx:value="DashboardSideBarItem" />
+                            </styleClass></Text>
+                        <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="48.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="DashboardSideBarItemIcon">
+                            <image>
+                                <Image url="@../assets/pie-chart-alt-2-solid-24.png" />
+                            </image></ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="courses" layoutY="217.0" prefHeight="60.0" prefWidth="206.0" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text fx:id="home1" layoutX="80.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardSideBarItemText" text="Courses" />
+                        <ImageView fitHeight="23.0" fitWidth="26.0" layoutX="48.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" styleClass="DashboardActiveItemIcon">
+                            <image>
+                                <Image url="@../assets/layer-regular-24.png" />
+                            </image></ImageView>
+                    </children>
+                    <styleClass>
+                        <String fx:value="DashboardSideBarItem" />
+                        <String fx:value="DashboardSideBarItemText" />
+                    </styleClass>
+                </AnchorPane>
+                <AnchorPane fx:id="attendance" layoutY="285.0" prefHeight="60.0" prefWidth="200.0" styleClass="DashboardSideBarActiveItem" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text fx:id="home2" layoutX="79.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardSideBarActiveItemText" text="Attendance" />
+                        <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="47.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/user-check-regular-24.png" />
+                            </image></ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="results" layoutY="352.0" prefHeight="60.0" prefWidth="200.0" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text fx:id="home3" layoutX="79.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardSideBarItemText" text="Results" />
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="46.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/bar-chart-alt-2-regular-24.png" />
+                            </image></ImageView>
+                    </children>
+                    <styleClass>
+                        <String fx:value="DashboardSideBarItem" />
+                        <String fx:value="DashboardSideBarItemText" />
+                    </styleClass>
+                </AnchorPane>
+                <AnchorPane fx:id="events" layoutY="421.0" prefHeight="60.0" prefWidth="200.0" styleClass="DashboardSideBarItem" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text fx:id="home4" layoutX="79.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardSideBarItemText" text="Events" />
+                        <ImageView fitHeight="22.0" fitWidth="32.0" layoutX="45.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/task-regular-24.png" />
+                            </image></ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="todolist" layoutY="493.0" prefHeight="60.0" prefWidth="200.0" styleClass="DashboardSideBarItem" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text fx:id="home5" layoutX="79.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardSideBarItemText" text="To-Do List" />
+                        <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/spreadsheet-regular-24.png" />
+                            </image></ImageView>
+                    </children>
+                </AnchorPane>
+            <AnchorPane fx:id="booklist" layoutY="565.0" prefHeight="60.0" prefWidth="200.0" styleClass="DashboardSideBarItem" stylesheets="@../css/Dashboard.css">
+               <children>
+                  <Text fx:id="home51" layoutX="79.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardSideBarItemText" text="BookList" />
+                  <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="46.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/book-open-regular-24.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane fx:id="MainAnchor" prefHeight="200.0" prefWidth="200.0" styleClass="DashboardScreen" stylesheets="@../css/Dashboard.css" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane fx:id="StudentProfileIcon" layoutX="833.0" layoutY="14.0" prefHeight="40.0" prefWidth="40.0" styleClass="DashboardStudentImageBackground" stylesheets="@../css/Dashboard.css">
+                    <children>
+                        <Text fx:id="usernameFirstLetter" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardStudentNameIcon" text="M" />
+                    </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </AnchorPane>
+                <Text layoutX="25.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardTitle" text="ATTENDANCE" />
+                      <AnchorPane layoutY="125.0" prefHeight="539.0" prefWidth="903.0" styleClass="graph" stylesheets="@../css/AttendanceScreen.css">
+                          <children>
+                              <Button fx:id="updateButton11" layoutX="360.0" layoutY="434.0" mnemonicParsing="false" onAction="#openDetailsPane" prefHeight="50.0" prefWidth="110.0" styleClass="AttendanceButton" stylesheets="@../css/AttendanceScreen.css" text="Details" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                              <Label layoutX="46.0" layoutY="75.0" prefHeight="20.0" prefWidth="248.0" styleClass="HeadlineText" stylesheets="@../css/AttendanceScreen.css" text="Attendance Percentage Chart" textFill="#015fb0">
+                                  <font>
+                                      <Font name="Montserrat Black" size="12.0" />
+                                  </font>
+                              </Label>
+                              <Button fx:id="updateButton" layoutX="180.0" layoutY="434.0" mnemonicParsing="false" onAction="#openInputPane" prefHeight="50.0" prefWidth="110.0" styleClass="AttendanceButton" stylesheets="@../css/AttendanceScreen.css" text="Update" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                              <BarChart fx:id="barChart" layoutX="5.0" layoutY="107.0" legendSide="RIGHT" prefHeight="310.0" prefWidth="858.0" styleClass="graphBackground" stylesheets="@../css/AttendanceScreen.css">
+                                  <xAxis>
+                                      <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                                  </xAxis>
+                                  <yAxis>
+                                      <NumberAxis fx:id="yAxis" prefHeight="267.0" prefWidth="60.0" side="LEFT" stylesheets="@../css/AttendanceScreen.css" tickLabelFill="#015fb0" />
+                                  </yAxis>
+                              </BarChart>
+                              <AnchorPane fx:id="Details" layoutX="12.0" layoutY="45.0" prefHeight="450.0" prefWidth="870.0" styleClass="AddCourseCard" stylesheets="@../css/CourseScreen.css" visible="false">
+                                  <children>
+                                      <ScrollPane hbarPolicy="NEVER" layoutX="11.0" layoutY="50.0" prefHeight="369.0" prefWidth="852.0" styleClass="ScrollPaneBoarder" stylesheets="@../css/CourseScreen.css" vbarPolicy="ALWAYS">
+                                          <content>
+                                              <VBox prefHeight="386.0" prefWidth="839.0" styleClass="DashboardSideBar">
+                                                  <children>
+                                                      <GridPane fx:id="courseContainer2" alignment="TOP_CENTER" prefHeight="346.0" prefWidth="839.0" styleClass="ScrollScreen" VBox.vgrow="ALWAYS">
+                                                          <rowConstraints>
+                                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          </rowConstraints>
+                                                      </GridPane>
+                                                  </children>
+                                              </VBox>
+                                          </content>
+                                      </ScrollPane>
+                                      <ImageView fx:id="detailscross" fitHeight="42.0" fitWidth="53.0" layoutX="814.0" layoutY="10.0" onMouseClicked="#closeDetailsPane" onMouseDragged="#closeDetailsPane" pickOnBounds="true" preserveRatio="true" rotate="45.0" styleClass="login-button">
+                                          <image>
+                                              <Image url="@../assets/plus-regular-24%20(1).png" />
+                                          </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                                      </ImageView>
+                        <Text layoutX="361.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AddNewElementTitleText" text="Attendance Details" />
+                                  </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                              </AnchorPane>
+                              <AnchorPane fx:id="inputPane" layoutX="195.0" layoutY="60.0" prefHeight="405.0" prefWidth="440.0" styleClass="AddCourseCard" visible="false">
+                                  <children>
+                                      <TextField fx:id="updateCourseNameTextField" layoutX="30.0" layoutY="98.0" prefHeight="50.0" prefWidth="400.0" promptText="Course Name" styleClass="UsernameTextField" stylesheets="@../css/WelcomeScreen.css" />
+                                      <TextField fx:id="updateAttendanceTextField" layoutX="30.0" layoutY="178.0" prefHeight="50.0" prefWidth="400.0" promptText="Attended classes" styleClass="UsernameTextField" stylesheets="@../css/WelcomeScreen.css" />
+                                      <Button layoutX="176.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="50.0" prefWidth="110.0" styleClass="AttendanceButton" stylesheets="@../css/AttendanceScreen.css" text="Update" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                                      <Label fx:id="errorLabel" layoutX="33.0" layoutY="313.0" prefHeight="18.0" prefWidth="236.0" textFill="#ff2d2d" />
+                                      <ImageView fx:id="cross" fitHeight="42.0" fitWidth="53.0" layoutX="410.0" layoutY="7.0" onMouseClicked="#handleCancelButtonAction" onMouseDragged="#handleCancelButtonAction" pickOnBounds="true" preserveRatio="true" rotate="45.0" styleClass="login-button">
+                                          <image>
+                                              <Image url="@../assets/plus-regular-24%20(1).png" />
+                                          </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                                      </ImageView>
+                                      <TextField fx:id="updateTotalclassesTextField" layoutX="30.0" layoutY="262.0" prefHeight="50.0" prefWidth="400.0" promptText="Total classes" styleClass="UsernameTextField" stylesheets="@../css/WelcomeScreen.css" />
+                        <Text layoutX="149.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AddNewElementTitleText" text="Update Attendance" />
+                        <Line endX="299.0" endY="1.0" layoutX="131.0" layoutY="147.0" startX="-100.0" stroke="#0088ffba">
+                           <effect>
+                              <DropShadow height="3.0" offsetY="-1.0" radius="0.25" width="0.0" />
+                           </effect>
+                        </Line>
+                        <Line endX="299.0" endY="1.0" layoutX="131.0" layoutY="227.0" startX="-100.0" stroke="#0088ffba">
+                           <effect>
+                              <DropShadow height="3.0" offsetY="-1.0" radius="0.25" width="0.0" />
+                           </effect>
+                        </Line>
+                        <Line endX="299.0" endY="1.0" layoutX="131.0" layoutY="311.0" startX="-100.0" stroke="#0088ffba">
+                           <effect>
+                              <DropShadow height="3.0" offsetY="-1.0" radius="0.25" width="0.0" />
+                           </effect>
+                        </Line>
+                                  </children>
+                     <stylesheets>
+                        <URL value="@../css/AttendanceScreen.css" />
+                        <URL value="@../css/CourseScreen.css" />
+                     </stylesheets>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                              </AnchorPane>
+                          </children>
+                      </AnchorPane>
+                <Line fx:id="horizontalLineWhileScrolling" endX="796.0" layoutX="107.0" layoutY="124.0" opacity="0.14" startX="-107.0" styleClass="DashboardSideBarActiveItem">
+                    <effect>
+                        <DropShadow height="4.43" offsetY="1.0" radius="0.6074999999999999" spread="0.1" width="0.0" />
+                    </effect>
+                </Line>
+            <AnchorPane fx:id="profileDropdown" layoutX="625.0" layoutY="61.0" prefHeight="135.0" prefWidth="250.0" styleClass="ProfileDropdown" stylesheets="@../css/Dashboard.css" visible="false">
+               <children>
+                  <Text fx:id="ProfileDropdownUsername" layoutX="69.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ProfileInfoDropdownNameText" text="Mahmudul Yeamim" />
+                  <AnchorPane fx:id="logoutButton" layoutY="110.0" prefHeight="43.0" prefWidth="250.0">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="21.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/log-out-circle-regular-24.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="logoutText" layoutX="46.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ProfileInfoDropdownText" text="Logout" />
+                        <ImageView fx:id="logoutArrow" fitHeight="32.0" fitWidth="21.0" layoutX="199.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/chevron-right-regular-24.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane fx:id="StudentProfileIcon1" layoutX="14.0" layoutY="13.0" prefHeight="45.0" prefWidth="45.0" styleClass="ProfileDropdownStudentImageBackground" stylesheets="@../css/Dashboard.css">
+                     <children>
+                        <Text fx:id="ProfileDropdownUsernameFirstLetter" layoutX="17.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardStudentNameIcon" text="M" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="editProfileButton" layoutY="67.0" prefHeight="43.0" prefWidth="250.0">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="21.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/user-circle-regular-24.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="editProfileText" layoutX="46.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ProfileInfoDropdownText" text="Edit Profile" />
+                        <ImageView fx:id="editProfileArrow" fitHeight="32.0" fitWidth="21.0" layoutX="199.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/chevron-right-regular-24.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="127.0" layoutX="111.0" startX="-100.0" stroke="#4541416a" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="EditProfileCard" layoutX="210.0" layoutY="210.0" prefHeight="281.0" prefWidth="450.0" styleClass="AddCourseCard" stylesheets="@../css/CourseScreen.css" visible="false">
+               <children>
+                  <Text layoutX="150.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AddNewElementTitleText" text="Edit Profile Details" />
+                  <TextField fx:id="editUsernameTextField" focusTraversable="false" layoutX="26.0" layoutY="67.0" prefHeight="52.0" prefWidth="398.0" promptText="Username" styleClass="AddCourseTextField" stylesheets="@../css/CourseScreen.css" />
+                  <TextField fx:id="editPasswordTextField" focusTraversable="false" layoutX="27.0" layoutY="145.0" prefHeight="52.0" prefWidth="398.0" promptText="Password" styleClass="AddCourseTextField" stylesheets="@../css/CourseScreen.css" />
+                  <Line endX="295.0" layoutX="128.0" layoutY="119.0" startX="-100.0" stroke="#0088ffba">
+                     <effect>
+                        <DropShadow height="3.0" offsetY="-1.0" radius="0.25" width="0.0" />
+                     </effect>
+                  </Line>
+                  <Line endX="295.0" layoutX="128.0" layoutY="197.0" startX="-100.0" stroke="#0088ffba">
+                     <effect>
+                        <DropShadow height="3.0" offsetY="-1.0" radius="0.25" width="0.0" />
+                     </effect>
+                  </Line>
+                  <AnchorPane fx:id="cancelEditProfileButton" layoutX="36.0" layoutY="213.0" prefHeight="53.0" prefWidth="189.0" styleClass="DashboardSideBarItem" stylesheets="@../css/Dashboard.css">
+                     <children>
+                        <Text fx:id="cancelText3" layoutX="70.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ConfirmationButtonText" text="Cancel" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="saveEditProfileButton" layoutX="225.0" layoutY="213.0" prefHeight="53.0" prefWidth="189.0" styleClass="DashboardSideBarItem" stylesheets="@../css/Dashboard.css">
+                     <children>
+                        <Text fx:id="addText3" layoutX="75.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ConfirmationButtonText" text="Save" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="editUsernameWarningLabel" layoutX="30.0" layoutY="50.0" text="*You are not allowed to change username" textFill="RED" />
+                  <Label fx:id="editPasswordWarningLabel" layoutX="30.0" layoutY="125.0" text="*Fill Password" textFill="RED" visible="false" />
+               </children>
+               <effect>
+                  <DropShadow height="50.0" radius="24.5" width="50.0" />
+               </effect>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

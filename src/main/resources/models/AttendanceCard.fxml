@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AttendanceCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="778.0" styleClass="TextItemCard" stylesheets="@../css/CourseScreen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AttendanceCardController">
+    <children>
+        <Text fx:id="courseName" layoutX="71.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="Course" />
+        <Text fx:id="teacherName" layoutX="580.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="Collections Frameworks" />
+        <Text fx:id="courseCode" layoutX="365.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="do" />
+        <Text fx:id="attendedClasses" layoutX="442.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="do" />
+        <Text fx:id="totalClasses" layoutX="110.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="do" wrappingWidth="122.28571428571422" />
+        <Label layoutX="326.0" layoutY="16.0" styleClass="Caption" text="Code:" textFill="#000000b2">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+        <Label layoutX="19.0" layoutY="16.0" prefHeight="16.0" prefWidth="59.0" styleClass="Caption" stylesheets="@../css/CourseScreen.css" text="Course:" textFill="#000000b3">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+        <Label layoutX="522.0" layoutY="16.0" styleClass="Caption" text="Teacher:" textFill="#000000b2">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+        <Label layoutX="19.0" layoutY="45.0" styleClass="Caption" text="Total Classes:" textFill="#000000b2">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+        <Label layoutX="326.0" layoutY="45.0" styleClass="Caption" text="Attended Classes:" textFill="#000000b2">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+        <Label layoutX="522.0" layoutY="45.0" styleClass="Caption" text="Percentage:" textFill="#000000b2">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+        <Text fx:id="percentage" layoutX="600.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="TrackCardTopicNameText" text="do" />
+    </children>
+</AnchorPane>

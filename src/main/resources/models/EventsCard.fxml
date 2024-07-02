@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="EventsCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="423.0" styleClass="EventsCards" stylesheets="@../css/EventsScreen.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EventsCardController">
+    <children>
+        <AnchorPane fx:id="sideCover" layoutX="285.0" prefHeight="120.0" prefWidth="138.0" styleClass="EventsCardSideCover" stylesheets="@../css/EventsScreen.css">
+            <children>
+                <Text fx:id="EventsDate" layoutX="19.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="EventsDate" text="02 May" wrappingWidth="77.55810546875" />
+                <ImageView fx:id="verticalThreeDots" fitHeight="20.0" fitWidth="20.0" layoutX="114.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                    <image>
+                        <Image url="@../assets/dots-vertical-rounded-regular-24.png" />
+                    </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Text fx:id="EventTime" layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="EventsTime" text="• 10:00 AM - 11:00 AM" />
+        <Text fx:id="EventName" layoutX="12.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="EventsName" text="Data Structures &amp; Algorithm" />
+      <Text fx:id="EventType" layoutX="14.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="EventsTime" text="Class" />
+    </children>
+</AnchorPane>

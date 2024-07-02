@@ -1,0 +1,72 @@
+.AttendanceButton{
+    -fx-background-radius:10px;
+    -fx-background-color: linear-gradient(to bottom right,#055ca3,#4fa9ee);
+}
+
+.AttendanceButton: hover {
+    -fx-effect: dropshadow(three-pass-box, grey, 3, 0, 1, 1);
+}
+
+.Screen {
+    -fx-background-color: linear-gradient(to bottom right,#fafdff,#bad1e2);
+}
+
+.ScrollScreen {
+    -fx-background-color: linear-gradient(to bottom right,#E8F3FF,#E8F3FF);
+}
+
+.text-background{
+    -fx-background-color:#fff;
+}
+
+.pic-background{
+     -fx-background-color: linear-gradient(to bottom right,#055ca3,#4fa9ee);
+}
+
+.login-button{
+    -fx-background-color: linear-gradient(to bottom right,#055ca3,#4fa9ee);
+}
+.login-button:hover{
+    -fx-effect: dropshadow(three-pass-box, grey, 5, 0, 2, 2);
+}
+
+.Enter-background{
+     -fx-background-color: radial-gradient(center 50% 50% , radius 1000px ,#055ca3, #4fa9ee);
+}
+
+.graph {
+    -fx-background-color: #F0F7FF;
+}
+
+.HeadlineText {
+    -fx-font-family: Tahoma;
+    -fx-font-size:16px;
+    -fx-line-spacing:-5px;
+    -fx-letter-spacing:-3px;
+    -fx-fill:#ffffff;
+    -fx-font-weight:700;
+}
+
+.transparent{
+     -fx-background-color: rgba(255,255,255,0.2);
+     -fx-background-radius: 10;
+}
+
+.graphBackground{
+      -fx-background-color: transparent;
+}
+.axis {
+    -fx-stroke: #015FB0;
+    -fx-fill: #015FB0;
+    -fx-font-size:24;
+    -fx-tick-label-fill: #015FB0;
+}
+
+.chart-number-axis .axis-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #015FB0;
+}
+
+.chart-legend {
+    -fx-background-color: #F0F7FF;
+}

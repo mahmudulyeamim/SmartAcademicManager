@@ -1,0 +1,57 @@
+.EventsDate {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 40px;
+    -fx-font-weight: 600;
+    -fx-fill: #FFFFFF;
+}
+
+.EventsCardSideCover {
+    -fx-background-radius: 12px 12px 12px 0px;
+    -fx-background-color: linear-gradient(to right, #0079E2, #318FDF);
+}
+
+.EventsName {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 16px;
+    -fx-line-spacing:-5px;
+    -fx-font-weight:900;
+    -fx-fill: #2E3940;
+}
+
+.EventsCards {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12px 12px 12px 0px;
+}
+
+.EventsCards: hover {
+    -fx-effect: dropshadow(three-pass-box, grey, 5, 0, 1, 1);
+}
+
+.EventsTime {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: 700;
+    -fx-fill: gray;
+}
+
+.combo-box, .date-picker {
+    -fx-font-size: 16px;
+    -fx-font-family: Tahoma;
+    -fx-border-width: 0;
+    -fx-background-color: #F0F7FF;
+    -fx-background-radius: 8px;
+    -fx-padding-left: 20px;
+    -fx-cursor: hand;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #0079E2;
+    -fx-shape: "M 0 0 L 6 6 L 12 0 Z";
+}
+
+.date-picker .text-field {
+    -fx-background-color: #F0F7FF;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #F0F7FF;
+}

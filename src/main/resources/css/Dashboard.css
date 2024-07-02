@@ -1,0 +1,305 @@
+.DashboardScreen {
+    -fx-background-color: #F0F7FF;
+}
+
+.DashboardStudentImageBackground, .ProfileDropdownStudentImageBackground {
+    -fx-background-color: #0079E2;
+    -fx-background-radius: 50%;
+    -fx-background-color: linear-gradient(to top, #0079E2, #318FDF);
+}
+
+.DashboardStudentImageBackground: hover {
+    -fx-effect: dropshadow(three-pass-box, grey, 5, 0, 1, 1);
+}
+
+.DashboardTitle {
+    -fx-font-family: Arial;
+    -fx-font-size:24px;
+    -fx-line-spacing:-5px;
+    -fx-font-weight:900;
+    -fx-fill: #015FB0;
+}
+
+.DashboardItemCourseCode {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 20 px;
+    -fx-line-spacing:-5px;
+    -fx-font-weight:900;
+    -fx-fill: #2E3940;
+}
+
+.DashboardSideBar {
+    -fx-background-color: #E8F3FF;
+    -fx-background-radius: 0px;
+}
+
+.DashboardSideBarActiveItem {
+    -fx-background-color: #0079E2;
+    -fx-background-radius: 30px;
+    -fx-background-color: linear-gradient(to top, #0079E2, #318FDF);
+}
+
+.DashboardSideBarActiveItemText, .DashboardStudentNameIcon {
+    -fx-font-family: Arial;
+    -fx-font-size:16px;
+    -fx-line-spacing:-5px;
+    -fx-letter-spacing:-3px;
+    -fx-fill:#FFFFFF;
+    -fx-font-weight:600;
+}
+
+.DashboardSideBarItemText {
+    -fx-font-family: Arial;
+    -fx-font-size:16px;
+    -fx-line-spacing:-5px;
+    -fx-letter-spacing:-3px;
+    -fx-fill:#6A6A6A;
+    -fx-font-weight:600;
+}
+
+.DashboardStudentName {
+    -fx-font-size: 14px;
+}
+
+.DashboardSideBarItem: hover {
+    -fx-background-color: #D5ECFD;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+}
+
+.DashboardItem {
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:12px;
+}
+
+.DashboardItem: hover {
+    -fx-effect: dropshadow(three-pass-box, grey, 5, 0, 2, 2);
+}
+
+.DashboardItemTopCover {
+    -fx-background-color: #0079E2;
+    -fx-background-radius:12px 12px 0px 0px;
+    -fx-background-color: linear-gradient(to top, #0079E2, #318FDF);
+}
+
+.DashboardItemTitle {
+    -fx-font-family: Arial;
+    -fx-font-size:18px;
+    -fx-line-spacing:-5px;
+    -fx-font-weight:800;
+    -fx-fill:#FFFFFF;
+}
+
+.ClassPercentage {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 60px;
+    -fx-font-weight: 600;
+    -fx-fill: #015FB0;
+}
+
+.DashboardItemElement {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: 700;
+    -fx-fill: gray;
+}
+
+.ProfileDropdown {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12px;
+}
+
+.ProfileInfoDropdownNameText {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: 900;
+    -fx-font-size: 15px;
+    -fx-line-spacing: -5px;
+    -fx-fill: gray;
+}
+
+.ProfileInfoDropdownText {
+    -fx-font-family: Arial;
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+    -fx-line-spacing: -5px;
+    -fx-fill: gray;
+}
+
+.ProfileInfoDropdownText: hovered {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-fill: #5B5D69;
+}
+
+.Profile {
+    -fx-background-color: #0079E2;
+    -fx-background-radius: 50%;
+    -fx-background-color: linear-gradient(to top, #0079E2, #318FDF);
+}
+
+.AddElementButton {
+    -fx-background-radius: 50%;
+}
+
+.AddElementButton: hover {
+    -fx-background-color: #DFEEFF;
+}
+
+.AddNewElementTitleText {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: 900;
+    -fx-font-size: 16px;
+    -fx-line-spacing: -5px;
+    -fx-fill: #5B5D69;
+}
+
+.ConfirmationButtonText {
+    -fx-font-family: Tahoma;
+    -fx-font-size:16px;
+    -fx-line-spacing:-5px;
+    -fx-letter-spacing:-3px;
+    -fx-fill:#6A6A6A;
+    -fx-font-weight:700;
+}
+
+.ConfirmationButtons: hover {
+    -fx-background-color: #D5ECFD;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.DashboardTopCardSideCover1 {
+    -fx-background-radius: 12px 0px 0px 12px;
+    -fx-background-color: linear-gradient(to right, #F66E39, #FF7640);
+}
+
+.DashboardTopCardCircleCover1 {
+    -fx-background-radius: 50%;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #F66E39, #FF7640);
+}
+
+.DashboardTopNumber {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 40px;
+    -fx-font-weight: 600;
+    -fx-fill: #015FB0;
+}
+
+.PercentageSign {
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+    -fx-font-weight: 900;
+    -fx-fill: #015FB0;
+}
+
+.sideButton {
+    -fx-background-color: #D3EAF7;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.sideButton: hover {
+    -fx-border-radius: 6px;
+    -fx-border-color: #0079E2;
+}
+
+.sideButtonText {
+    -fx-font-family: Arial;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-fill: gray;
+}
+
+.DashboardTopCardSideCover2 {
+    -fx-background-radius: 12px 0px 0px 12px;
+    -fx-background-color: linear-gradient(to right, #23D63C, #21E23C);
+}
+
+.DashboardTopCardCircleCover2 {
+    -fx-background-radius: 50%;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #23D63C, #21E23C);
+}
+
+.DashboardTopCardSideCover3 {
+    -fx-background-radius: 12px 0px 0px 12px;
+    -fx-background-color: linear-gradient(to right, #E31414, #F21B1B);
+}
+
+.DashboardTopCardCircleCover3 {
+    -fx-background-radius: 50%;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #E31414, #F21B1B);
+}
+
+.DashboardBottomCardTopCover {
+    -fx-background-radius: 12px 12px 0px 0px;
+    -fx-background-color: linear-gradient(to bottom, #0079E2, #318FDF);
+}
+
+.DashboardBottomCardCircleCover {
+    -fx-background-radius: 50%;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%,  #0079E2, #318FDF);
+}
+
+.DashboardBottomCardTitle {
+    -fx-font-family: Arial;
+    -fx-font-size: 20px;
+    -fx-line-spacing: -5px;
+    -fx-font-weight: 900;
+    -fx-fill: #015FB0;
+}
+
+.DashboardEventsCards {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0px 12px 0px 0px;
+}
+
+.DashboardEventsCardSideCover {
+    -fx-background-radius: 12px 12px 0px 12px;
+    -fx-background-color: linear-gradient(to top left, #900C3F, #C70039);
+}
+
+.DashboardEventsDate {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 30px;
+    -fx-font-weight: 600;
+    -fx-fill: #FFFFFF;
+}
+
+.DashboardEventsName {
+    -fx-font-family: Tahoma;
+    -fx-font-size: 15px;
+    -fx-line-spacing:-5px;
+    -fx-font-weight:900;
+    -fx-fill: #2E3940;
+}
+
+.DashboardEventsTime {
+    -fx-font-family: Tahoma;
+    -fx-font-weight: 700;
+    -fx-fill: gray;
+}
+
+.DashboardBottomCardCircleCover1 {
+    -fx-background-radius: 50%;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #23D63C, #21E23C);
+}
+
+.DashboardBottomCardCircleCover2 {
+    -fx-background-radius: 50%;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #E31414, #F21B1B);
+}
+
+.CourseCardTitle {
+    -fx-font-family: Arial;
+    -fx-font-size:18px;
+    -fx-line-spacing:-5px;
+    -fx-font-weight:800;
+    -fx-fill:#FFFFFF;
+}
+
+.CourseCardTitle: hover {
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+
+

@@ -1,0 +1,64 @@
+.UsernameTextField{
+    -fx-font-size: 16px;
+    -fx-font-family: Tahoma;
+    -fx-border-width: 0;
+    -fx-background-color: #F5FBFF;
+    -fx-background-radius: 6px;
+    -fx-padding-left: 20px;
+}
+
+.Screen {
+    -fx-background-color: linear-gradient(to bottom right,#fafdff,#bad1e2);
+}
+
+.text-background{
+    -fx-background-color:#fff;
+}
+
+.pic-background{
+     -fx-background-color: linear-gradient(to bottom right,#055ca3,#4fa9ee);
+}
+
+.login-button{
+    -fx-background-color: linear-gradient(to bottom right,#055ca3,#4fa9ee);
+}
+
+.login-button:hover{
+    -fx-effect: dropshadow(three-pass-box, grey, 5, 0, 2, 2);
+}
+
+.enter-button{
+    -fx-background-color: linear-gradient(to top,#E2ECF0, #F0F6F9);
+}
+
+.enter-button:hover{
+    -fx-effect: dropshadow(three-pass-box, darkblue, 5, 0, 2, 2);
+}
+
+.Enter-background{
+     -fx-background-color: linear-gradient(to bottom left,#055ca3,#4fa9ee);
+}
+
+.HeadlineText {
+    -fx-font-family: Montserrat Black;
+    -fx-font-size:16px;
+    -fx-line-spacing:-5px;
+    -fx-letter-spacing:-3px;
+    -fx-fill:#ffffff;
+    -fx-font-weight:700;
+}
+
+.graph {
+    -fx-background-color: radial-gradient(center 50% 50% , radius 1000px ,#4fa9ee,#fafdff);
+}
+
+.transparent{
+     -fx-background-color: rgba(255,255,255,0.2);
+     -fx-background-radius: 10;
+}
+.axis {
+    -fx-stroke: #fff;
+    -fx-fill: #fff;
+    -fx-font-size:24;
+    -fx-tick-label-fill:#fff;
+}
